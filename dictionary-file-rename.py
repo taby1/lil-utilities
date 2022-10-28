@@ -18,9 +18,11 @@ if __name__ == "__main__":
     files = get_files(directory)
     print(files)
     keys = dd.keys()
+    print(keys)
     for file in files:
         for key in keys:
             if key in files:
+                print("Here")
                 # replace key substring with a dict value
                 print(file.replace(key, dd[key]))
     #     # check if key from dict is in file name
