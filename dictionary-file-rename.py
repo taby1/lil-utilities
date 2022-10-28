@@ -15,6 +15,7 @@ def get_files(directory):
 if __name__ == "__main__":
     # get first commandline argument
     directory = sys.argv[1]
+    print(directory)
     # get all files from directory
     files = get_files(directory)
     print(files)
