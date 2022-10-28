@@ -6,6 +6,7 @@ dict = {"Pilot":"S1E1 - Pilot", "Naming Rights":"S1E2 - Naming Rights", "YumTime
 
 def get_files(directory):
     filenames = next(os.walk(directory), (None, None, []))[2]  # [] if no file
+    return filenames
 
 
 # main function
