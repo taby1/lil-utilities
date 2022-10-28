@@ -17,7 +17,12 @@ if __name__ == "__main__":
     # get all files from directory
     files = get_files(directory)
     print(files)
-    # for file in files:
+    keys = dict.keys()
+    for file in files:
+        for key in keys:
+            if key in files:
+                # replace key substring with a dictionary value
+                print(file.replace(key, dict[key]))
     #     # check if key from dict is in file name
     #     # get filename
 
