@@ -5,11 +5,8 @@ dict = {"Pilot":"S1E1 - Pilot", "Naming Rights":"S1E2 - Naming Rights", "YumTime
 # get all files from directory
 
 def get_files(directory):
-    files = []
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            files.append(os.path.join(root, file))
-    return files
+    filenames = next(os.walk(directory), (None, None, []))[2]  # [] if no file
+
 
 # main function
 if __name__ == "__main__":
